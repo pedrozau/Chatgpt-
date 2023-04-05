@@ -23,7 +23,7 @@ inputForm.addEventListener('submit', function(event) {
   conversation.appendChild(message);
 
   // Generate chatbot response
-  const response =  fetch(`http://127.0.0.1:5000/api/v1/chat/${input}`)
+  const response =  fetch(`https://chatgpt-ria0.onrender.com/api/v1/chat/${input}`)
 
   response.then(function(response){
     response.json().then(function(response){
