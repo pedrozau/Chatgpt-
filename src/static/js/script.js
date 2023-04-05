@@ -30,7 +30,7 @@ inputForm.addEventListener('submit', function(event) {
 
       message = document.createElement('div');
       message.classList.add('chatbot-message','chatbot');
-      message.innerHTML = `<p class="chatbot-text" sentTime="${currentTime}">${response.data.content}</p>`;
+      message.innerHTML = `<p class="chatbot-text" sentTime="${currentTime}">${JSON.parse(response.data.content)}</p>`;
       conversation.appendChild(message);
       message.scrollIntoView({behavior: "smooth"});
 
