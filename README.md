@@ -18,4 +18,14 @@ How to start the project
   
 ```
 
+```
+  flask run 
+  
+```
+
+
+
+
+
+
 
