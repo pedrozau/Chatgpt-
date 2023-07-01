@@ -1,11 +1,17 @@
 from flask import Flask, render_template, jsonify
+from dotenv import load_dotenv 
 from flask_cors import CORS 
 import openai
+import os 
 
-openai.api_key = "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"
+
+load_dotenv()
+
+openai.api_key = os.environ.get('API_KEY')
 
 app = Flask(__name__) 
 CORS(app)
+
 
 
 
